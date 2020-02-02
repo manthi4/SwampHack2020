@@ -1,35 +1,29 @@
-import React from 'react';
-import sd from './sun-deck.png';
-import up from './UPPER-DECK.png';
-import ld from './LOWER-DECK.png';
-import td from './TERRACE-DECK.png';
+import React, { useState } from "react";
+import sd from "./sun-deck.png";
+import up from "./UPPER-DECK.png";
+import ld from "./LOWER-DECK.png";
+import td from "./TERRACE-DECK.png";
+import Dropdown from "./deckDropdown";
 
-const imagesPath = {
-    sun: sd,
-    upper: up,
-    lower: ld,
-    terrace: td
-  }
-  
-  class Ship extends React.Component {
-    state = {
-      id: 1
-    }
-    toggleImage = () => {
-      this.setState(state => ({ id: state.id<4 ? state.id+1 : 1 }))
-    }
-  
-    getImageName = () => this.state.id===1 ? 'sun' : this.state.id===2 ? 'upper' : this.state.id===3 ? 'lower' : 'terrace';
-    
-  
-    render(i){
-      const imageName = this.getImageName();
-      return (
-        <div>
-          <img src={imagesPath[imageName]} onClick={this.toggleImage} alt="ouch"/>
-        </div>
-      );
-    }
-  }
-  
-  export default Ship;
+const images = {
+  lower: ld,
+  upper: up,
+  sun: sd,
+  terrace: td
+};
+
+const Ship = props => {
+  const [name, setName] = useState("lower");
+  const onSelectDeck = deck => {
+    const keys = Object.keys(images);
+    setName(keys[deck - 1]);
+  };
+  return (
+    <div>
+      <Dropdown onChange={onSelectDeck} />
+      <img src={images[name]} alt="ouch" />
+    </div>
+  );
+};
+
+export default Ship;
