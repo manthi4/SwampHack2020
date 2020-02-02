@@ -41,6 +41,10 @@ export default function SimpleSelect({ onChange }) {
           <MenuItem value={1}>Day 1</MenuItem>
           <MenuItem value={2}>Day 2</MenuItem>
           <MenuItem value={3}>Day 3</MenuItem>
+          <MenuItem value={4}>Day 4</MenuItem>
+          <MenuItem value={5}>Day 5</MenuItem>
+          <MenuItem value={6}>Day 6</MenuItem>
+          <MenuItem value={7}>Day 7</MenuItem>
         </Select>
       </FormControl>
     </div>

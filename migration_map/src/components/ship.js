@@ -11,6 +11,27 @@ import sd2 from "./img/sun-deck-2.png";
 import up2 from "./img/UPPER-DECK-2.png";
 import ld2 from "./img/LOWER-DECK-2.png";
 import td2 from "./img/TERRACE-DECK-2.png";
+
+import sd3 from "./img/sun-deck-3.png";
+import up3 from "./img/UPPER-DECK-3.png";
+import ld3 from "./img/LOWER-DECK-3.png";
+import td3 from "./img/TERRACE-DECK-3.png";
+
+import sd4 from "./img/sun-deck-4.png";
+import up4 from "./img/UPPER-DECK-4.png";
+import ld4 from "./img/LOWER-DECK-4.png";
+import td4 from "./img/TERRACE-DECK-4.png";
+
+import sd5 from "./img/sun-deck-5.png";
+import up5 from "./img/UPPER-DECK-5.png";
+import ld5 from "./img/LOWER-DECK-5.png";
+import td5 from "./img/TERRACE-DECK-5.png";
+
+import sd6 from "./img/sun-deck-6.png";
+import up6 from "./img/UPPER-DECK-6.png";
+import ld6 from "./img/LOWER-DECK-6.png";
+import td6 from "./img/TERRACE-DECK-6.png";
+
 import DaySelector from "./dayDropdown";
 import Dropdown from "./deckDropdown";
 import TimeSel from "./TimeSelector";
@@ -28,7 +49,27 @@ const images = {
   lower2: ld2,
   upper2: up2,
   sun2: sd2,
-  terrace2: td2
+  terrace2: td2,
+
+  lower3: ld3,
+  upper3: up3,
+  sun3: sd3,
+  terrace3: td3,
+
+  lower4: ld4,
+  upper4: up4,
+  sun4: sd4,
+  terrace4: td4,
+
+  lower5: ld5,
+  upper5: up5,
+  sun5: sd5,
+  terrace5: td5,
+
+  lower6: ld6,
+  upper6: up6,
+  sun6: sd6,
+  terrace6: td6
 };
 
 //const ReactHeatmap = require('react-heatmap');
