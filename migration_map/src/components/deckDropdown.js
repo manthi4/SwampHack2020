@@ -9,11 +9,8 @@ import Ship from "./ship";
 
 const useStyles = makeStyles(theme => ({
   formControl: {
-    margin: theme.spacing(5),
-    
-    justifyContent: 'center',
-    float: 'right',
-    align: 'center',
+    margin: theme.spacing(1),
+    left: '50%',
     minWidth: 120
   },
   selectEmpty: {

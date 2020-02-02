@@ -9,6 +9,10 @@ import Select from "@material-ui/core/Select";
 const useStyles = makeStyles(theme => ({
   formControl: {
     margin: theme.spacing(1),
+    left: '50%',
+    justifyContent: 'center',
+    float: '',
+    align: 'center',
     minWidth: 120
   },
   selectEmpty: {
