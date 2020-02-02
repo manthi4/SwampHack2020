@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CruiseFront from "./CruiseFront.jpg";
+import CruiseFront from "./img/CruiseFront.jpg";
 console.log(CruiseFront);
 
 class Window extends Component {
