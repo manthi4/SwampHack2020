@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Window from "./components/window";
 import Slider, { Range } from "rc-slider";
 import "rc-slider/assets/index.css";
-import Ship from "./components/Ship";
+import Ship from ".//Ship";
 
 ReactDOM.render(
   <div>
