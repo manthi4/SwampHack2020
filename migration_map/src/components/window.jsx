@@ -25,7 +25,7 @@ class Window extends Component {
             data-target="#main-navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button
+          </button>
 
           <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="navbar-nav">
