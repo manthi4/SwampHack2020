@@ -50,7 +50,7 @@ class Window extends Component {
         </nav>
 
         {/* display ship */}
-        <span style={{ fontSize: 50 }} className="badge badge-light m-2">
+        <span style={{ fontSize: 40, width: 900, margin: 'auto' }} className="badge badge-light m-2">
           {this.levelName()}
           {this.shipView()}
         </span>
@@ -60,13 +60,13 @@ class Window extends Component {
 
   /* display ship image */
   shipView() {
-    return <img src={CruiseFront} class="img-responsive" alt="CruiseFront" width="300" height="auto"/>;
+    return <img src={CruiseFront} class="img-responsive" alt="CruiseFront" width="200" height="auto"/>;
   }
 
   /* displaay selected level */
   levelName() {
     const { shipView } = this.state;
-    return shipView === "cruiseFront" ? "All Levels " : shipView;
+    return shipView === "cruiseFront" ? "Ship Overview " : shipView;
   }
 }
 
