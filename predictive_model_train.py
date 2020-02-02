@@ -15,9 +15,6 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.pipeline import make_pipeline
 
 
-%matplotlib inline
-sns.set()
-
 data = pd.read_csv('path')
 
 ######Dividing the data
