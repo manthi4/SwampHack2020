@@ -50,9 +50,10 @@ class Window extends Component {
         </nav>
 
         {/* display ship */}
-        <span style={{ fontSize: 40, width: 900, margin: 'auto' }} className="badge badge-light m-2">
-          {this.levelName()}
+        <span style={{ fontSize: 40, width: '100%' }} className="badge badge-light m-2">
           {this.shipView()}
+          {this.levelName()}
+          
         </span>
       </div>
     );

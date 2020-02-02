@@ -100,7 +100,7 @@ const Ship = props => {
       <DaySelector onChange={onSelectDay} />
       <TimeSel />
       {/* <ReactHeatmap max={5} data={data} /> */}
-      <img src={images[name]} alt="ouch" />
+      <img src={images[name]} alt="ouch" style={{ marginLeft:'10%', width: '80%' }}/>
     </div>
   );
 };
