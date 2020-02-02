@@ -60,7 +60,7 @@ class Window extends Component {
 
   /* display ship image */
   shipView() {
-    return <img src={CruiseFront} class="img-responsive" alt="CruiseFront" />;
+    return <img src={CruiseFront} class="img-responsive" alt="CruiseFront" width="300" height="auto"/>;
   }
 
   /* displaay selected level */
