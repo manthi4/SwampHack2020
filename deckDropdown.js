@@ -5,6 +5,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
+import Ship from "./ship";
 
 const useStyles = makeStyles(theme => ({
   formControl: {
@@ -16,7 +17,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function SimpleSelect() {
+export default function SimpleSelect({ onChange }) {
   const classes = useStyles();
   const [deck, setDeck] = React.useState("");
 
@@ -28,6 +29,7 @@ export default function SimpleSelect() {
 
   const handleChange = event => {
     setDeck(event.target.value);
+    onChange(event.target.value);
   };
 
   return (
